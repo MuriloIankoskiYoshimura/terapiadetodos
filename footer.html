@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site com Header e Footer</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilo para o Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffffff; /* Fundo Branco */
+            padding: 20px 60px; /* Aumenta o padding para mais espaço interno */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Aumenta a sombra */
+            border-bottom: 2px solid #8B4F8B; /* Borda inferior na cor especificada */
+            width: 100%; /* Ocupa a largura total da tela */
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000; /* Garante que o header fique acima de outros conteúdos */
+        }
+
+        /* Container interno para centralizar o conteúdo do header */
+        .header-container {
+            max-width: 1400px; /* Limite de largura */
+            margin: 0 auto; /* Centraliza o conteúdo */
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 60px; /* Aumenta o tamanho do logo */
+        }
+
+        nav {
+            margin-left: 20px; /* Aumenta o espaço entre o logo e o menu */
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 50px; /* Diminui o espaço entre os itens do menu */
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #8B4F8B; /* Cor das letras de pesquisa */
+            font-size: 18px; /* Tamanho da fonte */
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Adiciona um espaçamento superior ao main para não sobrepor o header fixo */
+        main {
+            margin-top: 80px; /* Espaço para o header fixo aumentado */
+            padding: 20px;
+            width: 100%;
+        }
+
+        /* Estilo para o Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+            position: relative; /* Alterado para que o footer não fique fixo */
+            margin-top: 60px; /* Espaçamento acima do footer */
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer a {
+            color: #8B4F8B; /* Cor dos links no footer */
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="imagens/Logotipo-1-1536x437.png" alt="Logo da Empresa"> <!-- Altere o caminho para o seu logo -->
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="http://localhost/profissionais">Profissionais</a></li>
+                    <li><a href="http://localhost/cadastrocliente">Cadastro Cliente</a></li>
+                    <li><a href="http://localhost/login">Login</a></li>
+                    <li><a href="http://localhost/consulta">Agendar Consulta</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Conteúdo do Formulário -->
+        <form action="#" method="post">
+            <!-- Campos do formulário -->
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Minha Empresa. Todos os direitos reservados.</p>
+        <p><a href="#">Política de Privacidade</a> | <a href="#">Termos de Serviço</a></p>
+    </footer>
+</body>
+</html>

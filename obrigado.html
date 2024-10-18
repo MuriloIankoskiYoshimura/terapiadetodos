@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrigado!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f3e5f5; /* Fundo suave para destacar o conteúdo */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            text-align: center;
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 48px;
+            color: #8B4F8B;
+            margin: 0;
+            padding-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .checkmark {
+            font-size: 100px;
+            color: #8B4F8B;
+            margin-bottom: 20px;
+            animation: bounce 1s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #8B4F8B;
+            color: white;
+            font-size: 18px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #6d3b6d;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #999;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="checkmark">✔</div>
+        <h1>Obrigado!</h1>
+        <p>Seu cadastro foi realizado com sucesso. Estamos muito felizes em tê-lo(a) conosco. Estamos felizes em podermos trabalhar juntos para uma vida saudavel e longe de dores.</p>
+        <a href="http://localhost/TT/login" class="button">fazer login</a>
+        <footer>&copy; 2024 Terapia de Todos</footer>
+    </div>
+
+</body>
+</html>

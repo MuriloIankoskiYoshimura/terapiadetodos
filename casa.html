@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Home - Imóveis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #1c2434;
+            background-color: white;
+        }
+
+        header {
+            background-color: #1c2434;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        header.banner {
+            position: relative;
+            height: 60vh;
+            overflow: hidden;
+        }
+
+        .banner-video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .banner-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+
+        .banner-text h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        .btn {
+            background-color: #1c2434;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0a141d;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .carrossel {
+            background-color: #f0f0f0;
+            padding: 30px 0;
+        }
+
+        .oportunidades {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .oportunidades .imagens-superior,
+        .oportunidades .imagens-inferior {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+        }
+
+        .oportunidades .imagem {
+            width: 150px; /* Ajuste a largura conforme necessário */
+            height: 100px; /* Ajuste a altura conforme necessário */
+            margin: 5px;
+            background-color: #1c2434;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .oportunidades .imagem img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .quem-somos {
+            background-color: #f0f0f0;
+            padding: 30px 0;
+        }
+
+        .contato {
+            background-color: white;
+            padding: 30px 0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        form label {
+            margin: 10px 0 5px;
+        }
+
+        form input, form textarea {
+            width: 300px;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #1c2434;
+            border-radius: 5px;
+        }
+
+        form button {
+            background-color: #1c2434;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #0a141d;
+        }
+
+        footer {
+            background-color: #1c2434;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Imóveis XYZ</h1>
+        <nav>
+            <a href="#oportunidades">Casas à Venda</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <!-- Banner Superior -->
+    <header class="banner">
+        <video autoplay muted loop class="banner-video">
+            <source src="imagens/Praia de Garopaba - Santa Catarina.mp4" type="video/mp4">
+            Seu navegador não suporta vídeo.
+        </video>
+        <div class="banner-text">
+            <h1>casas a venda Imobiliaria Yoshimura</h1>
+            <a href="#oportunidades" class="btn">Saiba Mais</a>
+        </div>
+    </header>
+
+    <!-- Seção Oportunidades Premium -->
+    <section id="oportunidades" class="oportunidades">
+        <h2>Oportunidades Premium</h2>
+        <div class="imagens-superior">
+            <div class="imagem">
+                <img src="imagens/WhatsApp Image 2024-09-24 at 16.40.32.jpeg" alt="Imagem 1">
+            </div>
+            <div class="imagem">
+                <img src="imagens/imagem2.jpg" alt="Imagem 2">
+            </div>
+            <div class="imagem">
+                <img src="imagens/imagem3.jpg" alt="Imagem 3">
+            </div>
+            <div class="imagem">
+                <img src="imagens/imagem4.jpg" alt="Imagem 4">
+            </div>
+            <div class="imagem">
+                <img src="imagens/imagem5.jpg" alt="Imagem 5">
+            </div>
+        <button class="btn" onclick="verMais()">Ver Mais</button>
+    </section>
+
+    <!-- Seção Quem Somos -->
+    <section class="quem-somos">
+        <h2>Quem Somos</h2>
+        <p>Somos uma empresa dedicada a ajudar você a encontrar o imóvel perfeito com o melhor atendimento.</p>
+    </section>
+
+    <!-- Seção Entrar em Contato -->
+    <section id="contato" class="contato">
+        <h2>Entrar em Contato</h2>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Imóveis XYZ. Todos os direitos reservados.</p>
+        <a href="#contato">Contato</a>
+        <a href="#oportunidades">Casas à Venda</a>
+    </footer>
+
+    <script>
+        function verMais() {
+            // Aqui você pode adicionar a lógica para mostrar mais imagens
+            alert("Mais casas serão exibidas em breve!");
+        }
+    </script>
+</body>
+</html>
