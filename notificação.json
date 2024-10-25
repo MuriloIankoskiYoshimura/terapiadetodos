@@ -1,0 +1,20 @@
+{
+  "reference": "ID_PLANO",
+  "notificationURL": "localhost/TT/retorno_pagamentos.php",
+  "items": [
+    {
+      "id": "PLANO001",
+      "description": "Plano Mensal",
+      "amount": "100.00",
+      "quantity": 1
+    }
+  ],
+  "sender": {
+    "name": "Nome do Cliente",
+    "email": "email@cliente.com",
+    "phone": {
+      "areaCode": "11",
+      "number": "123456789"
+    }
+  }
+}
