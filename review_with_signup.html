@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão da Assinatura e Cadastro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #7b467b;
+            color: white;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            color: #7b467b;
+            border-radius: 8px;
+        }
+        label {
+            display: block;
+            text-align: left;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 10px;
+            border: 1px solid #7b467b;
+            border-radius: 5px;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #7b467b;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro e Revisão da Assinatura</h1>
+
+        <!-- Formulário de Cadastro -->
+        <form action="process_signup.php" method="POST">
+            <h2>Informações do Cliente</h2>
+            <label for="name">Nome Completo:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="phone">Telefone:</label>
+            <input type="text" id="phone" name="phone">
+
+            <!-- Informações da Assinatura -->
+            <h2>Revisão da Assinatura</h2>
+            <p><strong>Plano:</strong> Premium Mensal</p>
+            <p><strong>Valor:</strong> R$50,00/mês</p>
+            <p><strong>Período:</strong> Renovação automática mensal</p>
+
+            <!-- Botão de Confirmação -->
+            <button type="submit" class="button">Confirmar e Prosseguir ao Pagamento</button>
+        </form>
+    </div>
+</body>
+</html>
